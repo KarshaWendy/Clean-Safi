@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="price"
+                android:padding="2dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold|normal"
+                android:id="@+id/price"
+                android:layout_alignParentLeft="true"/>
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_below="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_centerHorizontal="true"
+                android:padding="2dp"/>
+
+            <View
+                android:layout_marginTop="4dp"
+                android:id="@+id/line_one"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/image"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:text="name"
+                android:layout_below="@+id/line_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:textSize="16sp"
+                android:textStyle="italic|bold"
+                android:padding="4dp"
+                android:id="@+id/name" />
+
+            <LinearLayout
+                android:id="@+id/layout_quantity"
+                android:layout_below="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                >
+
+                <ImageButton
+                    android:id="@+id/minus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="4dp"
+                    android:background="@android:color/darker_gray"
+                    android:src="@drawable/min"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/quantity_text_view"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="0"
+                    android:background="@drawable/quantity_text_view"
+                    android:textColor="@android:color/white"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/plus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="4dp"
+                    android:background="@android:color/darker_gray"
+                    android:src="@drawable/plus"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="4dp"
+                android:id="@+id/line_two"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/layout_quantity"
+                android:background="@color/colorPrimaryDark" />
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

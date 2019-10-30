@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "182818153775",
+    "firebase_url": "https://cleansafi1.firebaseio.com",
+    "project_id": "cleansafi1",
+    "storage_bucket": "cleansafi1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182818153775:android:b45ca2f4ba548bb1af6dda",
+        "android_client_info": {
+          "package_name": "com.example.cleansafi1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182818153775-jpit1qln4u7qeebl82emn6ci157te669.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cleansafi1",
+            "certificate_hash": "e2bd013d0b44e78e49c86f138fb93246dba553b0"
+          }
+        },
+        {
+          "client_id": "182818153775-l3q1ul7lummvd6esh63nalq5rcaui6fo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFwup8-5anuE47-z8M_QbGvNkCXgCsr1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182818153775-l3q1ul7lummvd6esh63nalq5rcaui6fo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

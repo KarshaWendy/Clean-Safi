@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/laundry_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.example.cleansafi1.utils.HeadingTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="Sign Up"
+                android:textColor="#F0F4F5"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:drawablePadding="9dp"
+                android:hint="Enter Your name"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:textColor="@color/button_text_color"
+                android:textColorHint="@color/light_gray" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:drawablePadding="9dp"
+                android:hint="Enter Your Email Address"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:textColor="@color/button_text_color"
+                android:textColorHint="@color/light_gray"/>
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:padding="5dp"
+                android:layout_marginTop="20dp">
+
+                <Spinner
+                    android:id="@+id/flag_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edit_box_drop_selector"
+                    android:dropDownWidth="200dp" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/apptheme_edit_text_holo_light"
+                    android:hint="Phone number"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:textColor="@color/button_text_color"
+                    android:textColorHint="@color/light_gray" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:drawablePadding="9dp"
+                android:hint="Enter Your Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:textColor="@color/button_text_color"
+                android:textColorHint="@color/light_gray"/>
+
+            <EditText
+                android:id="@+id/verify_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:drawablePadding="9dp"
+                android:hint="Confirm Your Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:textColor="@color/button_text_color"
+                android:textColorHint="@color/light_gray" />
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/apptheme_btn_default_holo_dark"
+                android:text="Create Account"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

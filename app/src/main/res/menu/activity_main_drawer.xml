@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Services">
+        <menu>
+            <item
+                android:id="@+id/add_address"
+                android:icon="@mipmap/add_address"
+                android:visible="false"
+                android:title="Add Address" />
+            <item
+                android:id="@+id/request_laundry"
+                android:icon="@mipmap/request_laundry"
+                android:title="Request laundry" />
+        </menu>
+    </item>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/login"
+                android:icon="@mipmap/login"
+                android:title="Login" />
+            <item
+                android:id="@+id/active"
+                android:icon="@mipmap/activate_user"
+                android:visible="false"
+                android:title="Activate User" />
+            <item
+                android:id="@+id/nav_reset_password"
+                android:icon="@mipmap/forgot_password"
+                android:title="Reset Password"/>
+            <item
+                android:icon="@mipmap/update_user"
+                android:id="@+id/nav_update_profile"
+                android:title="Update Profile"/>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@mipmap/logout"
+                android:title="Logout"/>
+        </menu>
+    </item>
+
+</menu>

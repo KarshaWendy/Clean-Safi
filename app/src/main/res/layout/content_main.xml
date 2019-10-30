@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.cleansafi1.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@mipmap/laundry_background">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:scrollbars="none"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.example.cleansafi1.utils.HeadingTextView
+        android:id="@+id/laundry_text"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="Let's do some Laundry!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

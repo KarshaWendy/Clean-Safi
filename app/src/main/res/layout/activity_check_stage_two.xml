@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/cart_img">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"
+        android:popupBackground="@android:color/darker_gray"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/spinner" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:text="Express Laundry Service"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        app:theme="@style/ColorSwitchStyle"
+        android:layout_below="@+id/spinner"
+        android:id="@+id/express_service" />
+
+    <LinearLayout
+        android:id="@+id/layout_pick_up"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/express_service"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/linear_layout_border"
+        android:weightSum="4">
+
+        <com.example.cleansafi1.utils.HeadingTextView
+            android:id="@+id/select_pick_up_time"
+            android:textSize="16sp"
+            android:text="Select Pickup Time"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            />
+
+        <com.example.cleansafi1.utils.HeadingTextView
+            android:id="@+id/pick_up_time_text"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="Time / Date"
+            />
+
+    </LinearLayout>
+
+    <com.example.cleansafi1.utils.HeadingTextView
+        android:id="@+id/drop_time_text"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:text="Drop Off Time(Must be between 14:00 - 20:00)"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/layout_pick_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:id="@+id/layout_drop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_below="@+id/drop_time_text"
+        android:orientation="horizontal"
+        android:background="@drawable/linear_layout_border"
+        android:weightSum="4">
+
+    <com.example.cleansafi1.utils.HeadingTextView
+        android:id="@+id/select_time"
+        android:textSize="16sp"
+        android:text="Select Drop Off Time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:padding="2dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+         />
+
+    <com.example.cleansafi1.utils.HeadingTextView
+        android:id="@+id/drop_time"
+        android:layout_weight="1.5"
+        android:layout_width="0dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Time / Date"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_drop"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:padding="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+    <com.example.cleansafi1.utils.HeadingTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/tag"
+        android:gravity="center"
+        android:layout_weight="2.5"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:text="Total Price: "/>
+
+    <com.example.cleansafi1.utils.HeadingTextView
+        android:id="@+id/total_price"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_width="0dp"
+        android:gravity="right"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/send_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/apptheme_btn_default_holo_dark"
+        android:drawablePadding="5dp"
+        android:textAllCaps="false"
+        android:text="Send Laundry Request"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

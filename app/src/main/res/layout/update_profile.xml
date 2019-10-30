@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/laundry_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.example.cleansafi1.utils.HeadingTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:textColor="#F0F4F5"
+                android:text="Update Your Profile"
+                android:textSize="30sp"/>
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:drawablePadding="9dp"
+                android:hint="Enter Your Full name"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@android:color/white"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:maxLines="1"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:drawablePadding="9dp"
+                android:hint="Enter Your Email Address"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@android:color/white"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:maxLines="1" />
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@android:color/white"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:drawablePadding="9dp"
+                android:hint="Enter Your Phone number"
+                android:inputType="phone"
+                android:padding="15dp"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@android:color/white"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:drawablePadding="9dp"
+                android:hint="New Password"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/verify_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:drawablePadding="9dp"
+                android:hint="Confirm Password"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@android:color/white"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:maxLines="1" />
+
+            <Button
+                android:id="@+id/update_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/apptheme_btn_default_holo_dark"
+                android:text="Update"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
