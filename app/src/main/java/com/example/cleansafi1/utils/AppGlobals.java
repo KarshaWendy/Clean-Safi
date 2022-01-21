@@ -27,12 +27,12 @@ public class AppGlobals extends Application {
     public static final String KEY_USER_DETAILS = "user_details";
     public static MainActivity sActivity;
     public static boolean logout = false;
-    public static final String BASE_URL = "";
+    public static final String BASE_URL = "https://cleansafi1.firebaseio.com/cleansafi1.json";
     public static boolean dialogCancel = false;
-    public static final String LOCATIONS_URL = "";
+    public static final String LOCATIONS_URL = "https://cleansafi1.firebaseio.com/cleansafi1.json";
     public static Typeface typefaceBold;
     public static Typeface typefaceNormal;
-    public static final String LAUNDRY_REQUEST_URL = "";
+    public static final String LAUNDRY_REQUEST_URL = "https://cleansafi1.firebaseio.com/cleansafi1.json";
 
     @Override
     public void onCreate() {

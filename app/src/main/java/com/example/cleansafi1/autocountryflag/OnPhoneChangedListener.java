@@ -18,6 +18,6 @@ package com.example.cleansafi1.autocountryflag;
 
 public interface OnPhoneChangedListener {
 
-    public void onPhoneChanged(String phone);
+    void onPhoneChanged(String phone);
 
 }
